@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "Axel-Properties.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Axel Properties</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Axel-Properties.html"><img src="media/Axel-Properties-Logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <span class="material-symbols-outlined" onclick="hideMenu()">
+                    close
+                    </span>
+                <ul>
+                    <li><a href="Axel-Properties.html">HOME</a></li>
+                    <li><a href="Axel-Properties-About.html">ABOUT</a></li>
+                    <li><a href="Axel-Properties-Reg-Off.html"> REGIONAL OFFICES</a></li>
+                    <li><a href="Axel-Properties-Gallery.html">GALLERY</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-symbols-outlined" onclick="showMenu()">
+                menu
+                </span>
+        </nav>
+        <h1>
+            Gallery
+        </h1>
+    </section>
+
+    <!-- Gallery  -->
+
+    <section class="gallery">
+        <h1>
+            This is a list of the properties we currently have on the market:
+        </h1>
+        <div class="row">
+            <div class="gal-col">
+                <div class="video-list">
+                    <div id="video1">
+                        <video loop preload="none" class="the-video" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="gal-col">
+                <div class="video-list">
+                    <div id="video2">
+                        <video loop preload="none" class="the-video" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="gal-col">
+                <div class="video-list">
+                    <div id="video3">
+                        <video loop preload="none" class="the-video" type="video/mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <section class="footer">
+        <h4>Our Mission</h4>
+        <p> Axel Properties is a luxurious property building and retail firm. <br> And we are committed to providing our customers with an unbeatable experience, no matter their preference. <br> We speak luxury.</p>
+        <div class="icons">
+            <a href="#facebook"><img src="media/AP-fb.png"></a>
+            <a href="#instagram"><img src="media/AP-ig.png"></a>
+            <a href="#twitter"><img src="media/AP-tw.png"></a>
+            <a href="#linkedin"><img src="media/AP-ln.png"></a>
+        </div>
+        <p class="copyright">
+            Axel Properties &copy; 2022
+        </p>
+    </section>
+
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
